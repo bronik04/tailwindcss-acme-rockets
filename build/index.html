@@ -12,13 +12,23 @@
           <a href="#hero">🚀 Acme Rockets</a>
         </h1>
         <div>
-          <button id="mobile-open-button" class="text-3xl sm:hidden focus:outline-none">&#9776;</button>
-          <nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
+          <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer">&#9776;</button>
+          <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
             <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
             <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
             <a href="#contact" class="hover:opacity-90">Contact Us</a>
           </nav>
         </div>
+      </section>
+      <section id="mobile-menu" class="absolute top-0 w-full bg-black text-5xl flex flex-col justify-center">
+        <button class="text-8xl self-end px-6">&times;</button>
+        <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+          <a href="#hero" class="w-full text-center py-6 hover:opacity-90">Home</a>
+          <a href="#rockets" class="w-full text-center py-6 hover:opacity-90">Our Rockets</a>
+          <a href="#testimonials" class="w-full text-center py-6 hover:opacity-90">Testimonials</a>
+          <a href="#contact" class="w-full text-center py-6 hover:opacity-90">Contact Us</a>
+          <a href="#footer" class="w-full text-center py-6 hover:opacity-90">Legal</a>
+        </nav>
       </section>
     </header>
     <main class="max-w-4xl mx-auto">
@@ -40,7 +50,7 @@
         <img class="w-1/2" src="./img/rocketdab.png" alt="Rocket Dab" />
       </section>
       <hr class="mx-auto bg-black dark:bg-white w-1/2" />
-      <section id="rockets" class="p-6 my-12 scroll-mt-20  widescreen:section-min-height tallscreen:section-min-height">
+      <section id="rockets" class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
         <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">Our Rockets</h2>
         <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
           <li
@@ -72,7 +82,10 @@
 
       <hr class="mx-auto bg-black dark:bg-white w-1/2" />
 
-      <section id="testimonials" class="p-6 my-12 scroll-mt-20  widescreen:section-min-height tallscreen:section-min-height">
+      <section
+        id="testimonials"
+        class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height"
+      >
         <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">Testimonials</h2>
 
         <figure class="my-12">
@@ -122,7 +135,7 @@
 
       <hr class="mx-auto bg-black dark:bg-white w-1/2" />
 
-      <section id="contact" class="p-6 my-12 scroll-mt-16  widescreen:section-min-height tallscreen:section-min-height">
+      <section id="contact" class="p-6 my-12 scroll-mt-16 widescreen:section-min-height tallscreen:section-min-height">
         <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">Contact Us</h2>
         <form action="" class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-start gap-4">
           <label for="subject">Subject:</label>
